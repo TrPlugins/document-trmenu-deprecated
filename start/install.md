@@ -15,9 +15,9 @@ TrMenu 需要在联网条件下载安装
 | Spigot | 1.8-1.16 |
 | Paper / Tuinity | 1.8-1.16 |
 | CatSever \(Forge\) | √ |
-| Akarin | **×** |
-| Arclight \(Forge\) | **×** |
-| Mohist \(Forge\) | **×** |
+| Akarin | unknown |
+| Arclight \(Forge\) | √ |
+| Mohist \(Forge\) | √ |
 | Other unknown servers so | uncertain |
 
 * 推荐前置：[PlaceholderAPI](http://ci.extendedclip.com/job/PlaceholderAPI/) \(必须保证版本在 **v2.10.9 +**\)

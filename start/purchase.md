@@ -24,7 +24,9 @@ description: TrMenu 是一款付费开源插件，致力于提供最优质的菜
 ## 渠道 <a id="qu-dao"></a>
 > 原作者即将高考, 故现由 Score2 无偿进行维护.
 > 
-> 你也可以选择性支持和鼓励 Score2 继续更新: https://afdian.net/@Score2
+> 你也可以选择性支持和鼓励 Score2 继续更新:
+> [https://afdian.net/@Score2](https://trmenu.docs.insinuate.cn/)
+> [https://afdian.net/@Score2](https://trmenu.docs.insinuate.cn/)
 
 {% embed url="http://afdian.net/@Arasple" %}
 
