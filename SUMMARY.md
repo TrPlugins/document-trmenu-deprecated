@@ -44,6 +44,7 @@
 * [函数变量](usage/functions.md)
 * [快捷绑定](usage/shortcuts.md)
 * [命令注册](usage/register-commands.md)
+* [节点变量](usage/node-getter.md)
 
 ## HOOK
 

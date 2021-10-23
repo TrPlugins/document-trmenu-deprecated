@@ -1,3 +1,8 @@
+# 图标变量
+```text
+@iconid@
+```
+
 # 函数变量
 
 {% hint style="info" %}
@@ -38,6 +43,12 @@
 
 ```text
 {gdata: <key>}
+```
+
+## 内置节点变量
+
+```text
+{node: <key>}
 ```
 
 ## 内置脚本函数
