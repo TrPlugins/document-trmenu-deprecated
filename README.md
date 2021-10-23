@@ -3,10 +3,11 @@ description: 欢迎查阅 TrMenu 公开文档
 ---
 
 # 首页
+> 该 Wiki 是继原 [Wiki](https://trmenu.trixey.cc/) 补充部分新功能和要点.
 
 ## 简介
 
-TrMenu 是基于 [TabooLib](https://tabooproject.org/) 开发，发布于 **2019-10-4** 的一款高级动态菜单系统
+TrMenu 是基于 [TabooLib](https://docs.tabooproject.org/) 开发，发布于 **2019-10-4** 的一款高级动态菜单系统
 
 
 
