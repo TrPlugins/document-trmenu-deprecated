@@ -1,22 +1,22 @@
 ---
-description: 本文章皆在带你快速了解 TrMenu 3.0 以及升级步骤
+description: This document is taking you to quickly understand TrMenu 3.0 and upgrade steps
 ---
 
-# 升级向导
+# Upgrade wizard
 
-## 更新内容
+## Update content
 
-### 底层
+### Bottom layer
 
-* 配置文件 & 语言文件 格式全部重新设计
-* 90% 代码完全重写, 瞄准极致性能体验
-* 发包虚拟容器结构完全重制，更快 & 更灵活
+* Configuration file & language file format are all redesigned
+* 90% of the code is completely rewritten, aiming at the ultimate performance experience
+* The virtual container structure of the package is completely remade, faster & more flexible
 
-#### 功能
+#### Function
 
-* 新增 `Free-Slot` 项，解除目标槽位的物品锁定 （不稳定）
+* Added `Free-Slot` item to unlock items in the target slot (unstable)
 
-#### 材质
+#### Material
 
 ```text
 head:%player_name% head:BlackSky
@@ -32,114 +32,114 @@ source:ORAXEN:itemId
 {json Content}
 ```
 
-* 特殊物品不再需要 { } 、&lt;&gt; 等
-* HeadDatabase / Oraxen / **ItemsAdder**\(新\) ****等物品挂钩需要以 ItemSource 格式
-* SkinsRestorer 的挂钩和自定义材质头颅一律集合到玩家头颅中，将自动检测处理
+* Special items are no longer needed { } 、&lt;&gt; etc.
+* HeadDatabase / Oraxen / **ItemsAdder**\(新\) ****Other item hooks need to be in ItemSource format
+* SkinsRestorer hook and heads of custom materials are all integrated into the player’s head, and will be automatically detected and processed
 
-#### 条件
+#### Condition
 
-条件检测是本次更新最大的改动部分
+Conditional detection is the biggest change part of this update
 
-现在条件弃用了 TrMenu 2 所提供的 “智能表达式”，仅支持 **Kether** 和 **JavaScript** 两种语句. 且默认使用 Kether 语句
+Now the condition abandoned the "smart expression" provided by TrMenu 2，and only supports **Kether** and **JavaScript** statements. Kether statement is used by default
 
 * **Kether**
-  * Kether 官方文档会提供使用说明
+  * Kether official documentation will provide instructions for use
 * **JavaScript**
-  * 需要 js 前缀，例如 `condition: 'js: player.getHealth() > 20.0'`
-  * 全部缓存，不支持动态编译变量，使用变量需要套函数
-  * 默认提供**对象**
+  * Js prefix is required, for example `condition: 'js: player.getHealth() > 20.0'`
+  * Full cache, does not support dynamic compilation of variables, use of variables requires a set of functions
+  * **Objects** is provided by default
     * `player`
     * `bukkitServer`
     * `utils`
-  * 默认提供**函数**
-    * `vars("STRING")` 编译变量，返回 String
-    * `varInt("STRING")` 编译变量，返回整型
+  * **Function** is provided by default
+    * `vars("STRING")` Compile variables and return String
+    * `varInt("STRING")` Compile variable, return integer
 
-> 弃用 v2 写法原因:
+> Reasons for deprecating v2:
 >
 > ```text
-> 1. 臃肿不灵活，不完善引发的错误多
-> 2. 没有规范缓存、变量处理
+> 1. Bloated and inflexible, many errors caused by imperfections
+> 2. No standard caching, variable processing
 > ```
 
-#### 函数
+#### Function
 
 {% page-ref page="../usage/functions.md" %}
 
-#### 动作
+#### Action
 
-* **ActionBound** 弃用 v1 遗留的 \_\|\|\_ 写法，现阶段统一为 `&&&`
-* **Title** 动作统一规范格式为
-  * `title: [标题] [副标题] [渐入时间] [停留] [渐出时间]`
-  * 包含空格的标题文本应用 · 括起
-* **Refresh** 动作现在可以指定图标槽位来刷新单个图标
-* **ActionOption** 动作参数现在推荐使用 `{[TYPE]=[VALUE]}` 的格式定义
-* **InputCatcher** 捕获器现在规范的参数包括 `type`, `start`, `cancel`, `end`. 特殊参数有 `display`, `itemLeft`, `itemRight`, `content` & 新增 BOOK 类型的捕获器
+* **ActionBound** The \_\|\|\_ left over from v1 is discarded, and at this stage, it is unified as `&&&`
+* **Title** The unified specification format of the action is
+  * `title: [Title] [Subtitle] [Fade In] [Stay] [Fade Out]`
+  * Title text application that contains spaces · Enclose
+* **Refresh** Actions can now specify icon slots to refresh a single icon
+* **ActionOption** Action parameters are now recommended to use the format definition of `{[TYPE]=[VALUE]}`
+* **InputCatcher** The standard parameters of the catcher now include `type`, `start`, `cancel`, `end`. The special parameters are `display`, `itemLeft`, `itemRight`, `content` & add BOOK type catcher
 
-#### 数据
+#### Data
 
-* Meta & Data 功能模块重写，新增 GlobalData 用以设置全局变量
-* 可通过 函数 功能调用
+* Meta & Data function module is rewritten, and GlobalData is added to set global variables
+* Can be called by function
 
-#### 命令
+#### Command
 
-* 物品仓库和物品转换合并为一个命令
-* 音效预览功能基于 ReceptacleAPI 重写
-* 性能损耗统计功能重写
-* 菜单列表格式化
-* 调试功能重写 Mirror & Dump 功能集成到 Debug 下
+* Item repo and item conversion are combined into one command
+* Sound preview function is rewritten based on ReceptacleAPI
+* Rewrite the performance loss statistics function
+* Menu list formatting
+* Debug function rewrite Mirror & Dump function integrated under Debug
 
 {% page-ref page="../usage/command.md" %}
 
 #### API
 
-* 提供 `ReceptacleAPI` 创建自定义虚拟容器，使用实例可参照 `me.arasple.mc.trmenu.module.internal.command.impl.CommandSounds`
+* Provide `ReceptacleAPI` to create custom virtual containers, use cases can refer to `me.arasple.mc.trmenu.module.internal.command.impl.CommandSounds`
 
-## 开始
+## Start
 
-由于 v3.x 与 v2.x 的配置 & 语言结构完全不兼容，菜单部分兼容
+Because the configuration & language structure of v3.x and v2.x are completely incompatible, the menu is partially compatible
 
-因此为了更好的完成升级，请先将旧的 TrMenu 文件夹重命名备用，
+Therefore, in order to better complete the upgrade, please rename the old TrMenu folder for future use.
 
-然后替换插件后生成新的 TrMenu 文件夹
+Then replace the plugin to generate a new TrMenu folder
 
-## 配置
+## Configuration
 
-根据本 Wiki 快速了解配置结构 & 根据需要配置
+Quickly understand the configuration structure according to this Wiki & configure as needed
 
-## 菜单
+## Menu
 
-不兼容的点
+Point of incompatibility
 
-* 内置函数 & 条件 & 脚本
-* 部分挂钩材质写法
-* \(v1.x \) TITLE 动作写法
-* \(v1.x\) 动作选项绑定写法 `_||_`
+* Built-in functions & conditions & scripts
+* Part of the hook material writing
+* \(v1.x \) TITLE action writing
+* \(v1.x\) Action option binding `_||_`
 
-解决方案
+Solution
 
-* 确保完整阅读新版文档
-* 按新格式重写条件（对于 JavaScript 需要处理字符串相关表达式）
+* Make sure to read the new version of the document completely
+* Rewrite conditions according to the new format (for JavaScript, string related expressions need to be processed)
 
 ## Q & A
 
-#### 为什么不提供一键迁移
+#### Why not provide one-click migrate
 
-本次更新摒弃了 v2 的大部分臃肿设计 & 重写了几乎所有模块
+This update discards most of the bloated design of v2 & rewrites almost all modules
 
-尤其涉及到脚本、条件方面的，迁移功能实属不容易做
+Especially when it comes to scripts and conditions, the migration function is not easy to do
 
-如果你只使用了一些简单的条件或 JavaScript 形式的，相对来说升级要容易些
+If you only use some simple conditions or JavaScript forms, it is relatively easier to upgrade
 
-例如应用替换功能 `hasPerm.`  -&gt; `perm *`
+For example, application replacement function `hasPerm.` -> `perm *`
 
-#### 有必要升级吗
+#### Is it necessary to upgrade
 
-对于正在运行的大型服务器，且菜单量大的，短期内没有必要
+For a large-scale server that is running and a large menu volume, it is not necessary in the short term
 
-新服或菜单需求量少（条件表达式少）的推荐尽快升级
+New servers or menus with low demand (less conditional expressions) are recommended to upgrade as soon as possible
 
-旧版本已停止维护和支持，不再处理遗留问题
+The old version has ceased maintenance and support, and no longer deals with remaining issues
 
 
 
