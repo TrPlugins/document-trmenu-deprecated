@@ -79,6 +79,13 @@ material: 'source:ITEMADDER:itemId'
 material: 'source:IA:anotherItemId'
 ```
 
+### Zaphkiel
+
+```yaml
+material: 'source:ZAPHKIEL:itemId'
+material: 'source:ZL:itemId'
+```
+
 ## \* 材质参数
 
 ### 附加值

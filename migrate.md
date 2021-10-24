@@ -4,7 +4,7 @@ description: 仅适用于 3.0-pre9 或更早的 v3 版本 TrMenu
 
 # 迁移指南
 
-## 从 3.0-pre9 或更早的 v3 版本 TrMenu 更好地迁入 3.0-pre12 以上.
+## 从更早的 v3 版本 TrMenu 迁入 3.0-pre12 以上.
 > 尽管 TabooLib-pre29 及之后的版本已具备自动迁移, 但我们仍然建议您根据以下说明进行迁移, 以免发生迁移失败.
 
 在 TabooLib 6.0.0 发布 preview 版后, 已适配 1.17 以上服务端.

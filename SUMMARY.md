@@ -21,7 +21,7 @@
 * [图标](menu/icon/README.md)
   * [设置](menu/icon/settings.md)
   * [显示](menu/icon/display/README.md)
-    * [材质](menu/icon/display/cai-zhi.md)
+    * [材质](menu/icon/display/material.md)
     * [名称](menu/icon/display/name.md)
     * [描述](menu/icon/display/lore.md)
     * [属性](menu/icon/display/property.md)
@@ -31,6 +31,12 @@
   * [参数](menu/action/option.md)
   * [反应 \(动作组\)](menu/action/reactions.md)
 * [条件](menu/condition.md)
+
+## DATABASE
+
+* [LOCAL](database/local.md)
+* [MONGODB](database/mongodb.md)
+* [自定义](database/custom.md)
 
 ## SCRIPT
 
