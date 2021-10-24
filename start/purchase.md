@@ -1,49 +1,49 @@
 ---
-description: TrMenu 是一款付费开源插件，致力于提供最优质的菜单系统体验
+description: TrMenu is a paid open source plugin, dedicated to providing the best quality menu system experience
 ---
 
-# 购买
+# Purchase
 
-> 付费购买本插件前，请先确认你的服务端核心、版本是否兼容
+> Before paying for this plugin, please confirm whether your server core and version are compatible
 
-## 价格
+## Price
 
 * **129** RMB
 
-## 条款
+## Terms 
 
-* TrMenu 是一款开源插件，完整代码在 Github 上且保持更新
-* 选择性为插件付费，能支持作者继续维护该项目 & 获得售后服务、帮助
-* 自愿付费支持项目，禁止一切形式、理由纠纷而发起退款诉求
-* 你可以通过非付费手段获得插件 JAR 文件，但 **未经许可禁止一切途径的二次分发**
+* TrMenu is an open source plugin, the complete code is on Github and is kept updated
+* Option to pay for the plugin, which can support the author to continue to maintain the project & get after-sales service and help
+* Voluntary payment support projects, prohibit all forms and reasons for disputes and initiate refund appeals
+* You can obtain plugin JAR files through non-paid means, but secondary distribution in all ways is prohibited without permission
 
-未购买者可以通过查阅本文档学习插件（文档完整开放）
+Non-purchasers can learn the plugin by consulting this document (the document is fully open)
 
-但可能不会受到开发者任何形式的帮助、支持
+But it may not receive any kind of help or support from the developer
 
-## 渠道 <a id="qu-dao"></a>
-> 原作者即将高考, 故现由 Score2 无偿进行维护.
+## Channel <a id="qu-dao"></a>
+> The original author is about to take the college entrance examination, so it is now maintained by Score2 free of charge.
 > 
-> 你也可以选择性支持和鼓励 Score2 继续更新:
+> You can also selectively support and encourage Score2 to continue to update:
 > [https://afdian.net/@Score2](https://trmenu.docs.insinuate.cn/)
 > [https://afdian.net/@Score2](https://trmenu.docs.insinuate.cn/)
 
 {% embed url="http://afdian.net/@Arasple" %}
 
-~~TrMenu 爱发电 购买渠道~~
-* ~~付款购买后，你会在 **爱发电私信** 收到本插件的 **密匙**~~
-* ~~添加机器人 **193432545** 的好友，并私聊兑换密匙~~
-* ~~私聊发送消息 `#密匙` ，例如发送 `#27EFEF9092434D64AB3190B5DA596ADO`.~~
-* ~~通过机器人私聊命令 `/trmenu` 获取最新稳定版下载地址~~
+~~TrMenu Love Power Purchasing Channel~~
+* ~~After paying for the purchase, you will receive the key of this plugin in a private message on iPower~~
+* ~~Add bot **193432545**'s friends and chat privately to exchange keys~~
+* ~~Send message in private chat `#密匙` ，for example send `#27EFEF9092434D64AB3190B5DA596ADO`.~~
+* ~~Get the latest stable version download address through the robot private chat command `/trmenu`~~
 
-从任何第三方渠道获取到本插件 JAR 文件的，
+Obtain the plugin JAR file from any third-party channel,
 
-**不会受到作者的任何帮助支持**，亦不能保证插件的安全
+**Will not receive any help or support from the author**，nor can we guarantee the security of the plugin
 
-## 自行编译 <a id="zi-hang-bian-yi"></a>
+## Compile by yourself <a id="zi-hang-bian-yi"></a>
 
-* 本插件完全开源，提供完整构建文件，你若不愿为此付费可以自行构建
-* 不会受到任何帮助、支持
+* This plugin is completely open source and provides complete build files. If you don’t want to pay for it, you can build it yourself
+* Will not receive any help or support
 
 {% embed url="https://github.com/TrMenu/TrMenu" %}
 

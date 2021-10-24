@@ -1,12 +1,12 @@
 # Kether
 
-## 学习
+## Learn
 
 ![](https://kether.tabooproject.org/static/images/ketherx.png)
 
-{% embed url="https://kether.tabooproject.org" caption="KetherX 中文文档" %}
+{% embed url="https://kether.tabooproject.org" caption="KetherX Chinese document" %}
 
-## 注意
+## Note
 
-Kether 条件使用在图标、动作中时，因**不包含**任何延时、滞后返回的内容
+Kether conditions are used in icons and actions, because **does not include** any delayed or delayed return content
 
