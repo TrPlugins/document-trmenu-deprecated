@@ -21,7 +21,7 @@ Just remove the relevant nodes in the configuration file:
 Options:
   Language: en_US
 ```
-#### [Need] lang/*.yml (I.e. all language files)
+#### [Requirement] lang/*.yml (I.e. all language files)
 Because TabooLib 6.x has updated the function of automatically updating configuration files, in order to better realize automatic updating of configuration files.
 Therefore, the language file is required to be 'flattened' instead of 'multi-level', so the original language file format cannot be read again.
 

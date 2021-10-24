@@ -1,51 +1,51 @@
 ---
-description: 从正规渠道获取到本插件的 JAR 文件后，安装到服务器
+description: After obtaining the JAR file of this plugin from a regular channel, install it on the server
 ---
 
-# 安装
+# Install
 
-## 需求
+## Requirement
 
 {% hint style="info" %}
-TrMenu 需要在联网条件下载安装
+TrMenu needs to be downloaded and installed on the Internet
 {% endhint %}
 
-| 服务端 | 版本 |
+| Software | Version |
 | :--- | :--- |
-| Spigot | 1.8-1.16 |
-| Paper / Tuinity | 1.8-1.16 |
+| Spigot | 1.8-1.17 |
+| Paper / Tuinity | 1.8-1.17 |
 | CatSever \(Forge\) | √ |
 | Akarin | unknown |
 | Arclight \(Forge\) | √ |
 | Mohist \(Forge\) | √ |
 | Other unknown servers so | uncertain |
 
-* 推荐前置：[PlaceholderAPI](http://ci.extendedclip.com/job/PlaceholderAPI/) \(必须保证版本在 **v2.10.9 +**\)
+* Recommended:[PlaceholderAPI](http://ci.extendedclip.com/job/PlaceholderAPI/) \(Must ensure that the version is in **v2.10.10 +**\)
 
-## 安装
+## Install
 
-* 将 **TrMenu.jar** 丢进 plugins 目录
-* 重新启动服务器即可
+* Throw **TrMenu.jar** into the plugins directory
+* Restart the server
 
-## 兼容
+## Compatible
 
-已知冲突插件 & 解决方案：
+Known incompatible plugins & solutions：
 
 * **LibsDisguises**
-  * 原因：发包冲突
-  * 解决方法：
-    * 在 LibsDisguises 的配置文件中将 `Remove-Armor` 设置为 `false`
+  * Reason: Incompatible
+  * Solution:
+    * Set `Remove-Armor` to `false` in the configuration file of LibsDisguises
 
-## 注意
+## Note
 
 {% hint style="warning" %}
-TrMenu **不支持**一切形式的**热重载**，
+TrMenu **does not support all** forms of **reload**，
 
-强行进行热重载操作可能引发未知错误，请谨慎操作
+Forcible hot reload operation may cause unknown errors, please operate with caution
 
-包括但不限于：
+including but not limited to：
 
-* 通过 Plugman\(或类似插件\) 热重载 TrMenu
-* 通过 /reload \(confirm\) 指令重启服务端
+* TrMenu reload TrMenu via Plugman \(or similar plugin\)
+* Restart the server through the /reload \(confirm\) command
 {% endhint %}
 
