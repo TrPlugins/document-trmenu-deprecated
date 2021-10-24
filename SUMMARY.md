@@ -1,42 +1,42 @@
 # Table of contents
 
-* [首页](README.md)
-* [开始](start/README.md)
-  * [购买](start/purchase.md)
-  * [安装](start/install.md)
-  * [配置](start/configurate.md)
-* [迁移](migrate.md)
+* [First Page](README.md)
+* [Start](start/README.md)
+  * [Purchase](start/purchase.md)
+  * [Install](start/install.md)
+  * [Configuration](start/configurate.md)
+* [Migrate](migrate.md)
 
 ## MENU
 
-* [创建](menu/create.md)
-* [配置](menu/configuration/README.md)
-  * [标题](menu/configuration/title.md)
-  * [布局](menu/configuration/layout.md)
-  * [选项](menu/configuration/option.md)
-  * [绑定](menu/configuration/bindings.md)
-  * [事件](menu/configuration/event.md)
-  * [内置函数](menu/configuration/internal-functions.md)
-  * [周期任务](menu/configuration/tasks.md)
-* [图标](menu/icon/README.md)
-  * [设置](menu/icon/settings.md)
-  * [显示](menu/icon/display/README.md)
-    * [材质](menu/icon/display/material.md)
-    * [名称](menu/icon/display/name.md)
-    * [描述](menu/icon/display/lore.md)
-    * [属性](menu/icon/display/property.md)
-  * [交互](menu/icon/handler.md)
-* [动作](menu/action/README.md)
-  * [类型](menu/action/types.md)
-  * [参数](menu/action/option.md)
-  * [反应 \(动作组\)](menu/action/reactions.md)
-* [条件](menu/condition.md)
+* [Create](menu/create.md)
+* [Configuration](menu/configuration/README.md)
+  * [Title](menu/configuration/title.md)
+  * [Layout](menu/configuration/layout.md)
+  * [Option](menu/configuration/option.md)
+  * [Bindings](menu/configuration/bindings.md)
+  * [Event](menu/configuration/event.md)
+  * [Built-in function](menu/configuration/internal-functions.md)
+  * [Tasks](menu/configuration/tasks.md)
+* [Icon](menu/icon/README.md)
+  * [Settings](menu/icon/settings.md)
+  * [Display](menu/icon/display/README.md)
+    * [Material](menu/icon/display/material.md)
+    * [Name](menu/icon/display/name.md)
+    * [Lore](menu/icon/display/lore.md)
+    * [Property](menu/icon/display/property.md)
+  * [Handler](menu/icon/handler.md)
+* [Action](menu/action/README.md)
+  * [Type](menu/action/types.md)
+  * [Option](menu/action/option.md)
+  * [Reaction \(action group\)](menu/action/reactions.md)
+* [Condition](menu/condition.md)
 
 ## DATABASE
 
 * [LOCAL](database/local.md)
 * [MONGODB](database/mongodb.md)
-* [自定义](database/custom.md)
+* [Custom](database/custom.md)
 
 ## SCRIPT
 
@@ -45,18 +45,18 @@
 
 ## USAGE
 
-* [插件命令](usage/command.md)
-* [菜单传参](usage/arguments.md)
-* [物品特征](usage/item-matchers.md)
-* [函数变量](usage/functions.md)
-* [快捷绑定](usage/shortcuts.md)
-* [命令注册](usage/register-commands.md)
-* [节点变量](usage/node-getter.md)
+* [Command](usage/command.md)
+* [Arguments](usage/arguments.md)
+* [Item Matchers](usage/item-matchers.md)
+* [Functions](usage/functions.md)
+* [Shortcuts](usage/shortcuts.md)
+* [Command register](usage/register-commands.md)
+* [Node Variable](usage/node-getter.md)
 
 ## HOOK
 
-* [PAPI 变量](hook/placeholders.md)
-* [支持插件](hook/hookplugins.md)
+* [PAPI Variables](hook/placeholders.md)
+* [Support plugins](hook/hookplugins.md)
 
 ## DEVELOP
 
@@ -67,5 +67,5 @@
 
 ## appendix
 
-* [升级向导](appendix/v3-guide.md)
+* [Upgrade wizard](appendix/v3-guide.md)
 
