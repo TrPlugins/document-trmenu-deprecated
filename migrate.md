@@ -2,7 +2,7 @@
 description: Only applicable to 3.0-pre9 or earlier v3 version TrMenu
 ---
 
-# Migration guide
+# Migration Guide
 
 ## Migrate from the earlier v3 version of TrMenu to 3.0-pre12 and above.
 > Although TabooLib-pre29 and later versions have automatic migration, we still recommend you to migrate according to the following instructions to avoid migration failure.
@@ -11,9 +11,9 @@ After TabooLib 6.0.0 released the preview version, it has been adapted to the se
 However, its framework is greatly changed, which may cause some features of TrMenu to be different from that of TabooLib 5.x.
 Therefore, some content needs to be manually migrated to quickly update to TrMenu-pre12.
 
-## Migration instructions
+## Migration Instructions
 To help you update to the latest version faster, some mandatory and optional (optional) migration options are marked below.
-### Configuration file
+### Configuration File
 #### [Optional] settings.yml
 Because TabooLib 6.x updated the feature of automatically detecting the language of the executor, the node `Options.Language` has been removed,
 Just remove the relevant nodes in the configuration file:

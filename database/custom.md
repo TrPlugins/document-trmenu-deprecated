@@ -1,3 +1,3 @@
-# 自定义
+# Custom
 
-参考: https://trmenu.docs.insinuate.cn/develop/api/events#customdatabaseevent
+Refer to: https://trmenu.docs.insinuate.cn/develop/api/events#customdatabaseevent

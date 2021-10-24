@@ -56,7 +56,7 @@
 ## HOOK
 
 * [PAPI Variables](hook/placeholders.md)
-* [Support plugins](hook/hookplugins.md)
+* [Support Plugins](hook/hookplugins.md)
 
 ## DEVELOP
 
@@ -67,5 +67,5 @@
 
 ## appendix
 
-* [Upgrade wizard](appendix/v3-guide.md)
+* [Upgrade Wizard](appendix/v3-guide.md)
 

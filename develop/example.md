@@ -1,6 +1,6 @@
 # Example
 
-> 以下代码依照 TabooLib 插件方式演示
+> The following code is demonstrated in accordance with the TabooLib plugin method
 ```kotlin
 package com.github.username
 

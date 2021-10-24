@@ -1,17 +1,17 @@
 ---
-description: 本地数据库
+description: Local database
 ---
 
 # LOCAL
 
-## 配置
+## Configuration
 
 ```yaml
 Database:
   Method: LOCAL
 ```
 
-## 位于
+## Located
 
 ```text
 ./plugins/TrMenu/data/data.db

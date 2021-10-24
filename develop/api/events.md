@@ -1,11 +1,11 @@
 ---
-description: TrMenu 内置事件
+description: TrMenu built-in events
 ---
 
 # Events
 
 ## CustomDatabaseEvent
-* 自定义数据库
+* Custom Database
 ```kotlin
 package me.arasple.mc.trmenu.api.event
 
@@ -25,7 +25,7 @@ class CustomDatabaseEvent(val name: String, var database: Database? = null) : Bu
 
 
 ## MenuOpenEvent
-* 菜单打开事件
+* Menu Open Event
 ```kotlin
 package me.arasple.mc.trmenu.api.event
 
@@ -63,7 +63,7 @@ class MenuOpenEvent(val session: MenuSession, val menu: Menu, val page: Int, val
 
 
 ## MenuPageChangeEvent
-* 菜单翻页事件
+* Menu Page Change Event
 ```kotlin
 package me.arasple.mc.trmenu.api.event
 
@@ -79,7 +79,7 @@ class MenuPageChangeEvent(val session: MenuSession, val from: Int, val to: Int, 
 
 
 ## MenuCloseEvent
-* 菜单关闭事件
+* Menu Close Event
 ```kotlin
 package me.arasple.mc.trmenu.api.event
 

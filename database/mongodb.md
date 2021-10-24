@@ -1,10 +1,10 @@
 ---
-description: MongoDB 数据库
+description: MongoDB database
 ---
 
 # MONGODB
 
-## 配置
+## Configuration
 
 ```yaml
 Database:

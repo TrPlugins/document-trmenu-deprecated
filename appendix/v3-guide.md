@@ -2,11 +2,11 @@
 description: This document is taking you to quickly understand TrMenu 3.0 and upgrade steps
 ---
 
-# Upgrade wizard
+# Upgrade Wizard
 
-## Update content
+## Update Content
 
-### Bottom layer
+### Bottom Layer
 
 * Configuration file & language file format are all redesigned
 * 90% of the code is completely rewritten, aiming at the ultimate performance experience
