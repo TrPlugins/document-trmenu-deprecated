@@ -42,11 +42,23 @@ TrMenu 的主配置文件
 # 插件的选项
 #
 Options:
-  #
-  # 插件使用的语言
-  # 修改为 zh_CN 即可切换为中文
-  #
-  Language: en_US
+  # 性能模式: High, Normal, Low
+  Running-Performance: Normal
+  # 多线程
+  Multi-Thread: true
+  # 异步载入菜单
+  Async-Load-Menus: true
+
+#
+# 插件的玩家数据储存方式
+#
+Database:
+  # 储存方法: LOCAL, MONGODB
+  Method: LOCAL
+  Url:
+    Client: 'mongodb://localhost:3307'
+    Database: trixey
+    Collection: menu
 
 #
 # 菜单加载器
