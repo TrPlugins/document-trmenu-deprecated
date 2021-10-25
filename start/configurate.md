@@ -42,11 +42,22 @@ The main configuration file of TrMenu
 # Plugin options
 #
 Options:
-  #
-  # Language used by the plugin
-  # Modify to zh_CN to switch to Chinese
-  #
-  Language: en_US
+  # Performance mode: High, Normal, Low
+  Running-Performance: Normal
+  # Multithreading
+  Multi-Thread: true
+  # Load menu asynchronously
+  Async-Load-Menus: true
+#
+# Plugin player data storage method
+#
+Database:
+  # storage method: LOCAL, MONGODB
+  Method: LOCAL
+  Url:
+    Client: 'mongodb://localhost:3307'
+    Database: trixey
+    Collection: menu
 
 #
 # Menu loader

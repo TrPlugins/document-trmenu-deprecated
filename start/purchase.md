@@ -25,8 +25,7 @@ But it may not receive any kind of help or support from the developer
 > The original author is about to take the college entrance examination, so it is now maintained by Score2 free of charge.
 > 
 > You can also selectively support and encourage Score2 to continue to update:
-> [https://afdian.net/@Score2](https://trmenu.docs.insinuate.cn/)
-> [https://afdian.net/@Score2](https://trmenu.docs.insinuate.cn/)
+> [https://afdian.net/@Score2](https://afdian.net/@Score2)
 
 {% embed url="http://afdian.net/@Arasple" %}
 

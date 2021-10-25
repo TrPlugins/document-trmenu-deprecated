@@ -1,22 +1,22 @@
-# 命令注册
+# Command Register
 
-## 配置
+## Configuration
 
 {% code title="settings.yml" %}
 ```yaml
 RegisterCommands:
-  # 主命令名称
+  # Main command name
   openMenus:
-    # 子命令名称
+    # Sub command name
     aliases: [ ]
-    # 所需权限, 无需权限设置为 null 即可
+    # Required permissions, no need permissions set it to null
     permission: null
-    # 动作
+    # Action
     execute:
       - 'tell: &7Argument `example` Required!'
-    # 参数
+    # Arguments
     arguments:
       # /openMenu example
-      # 动作
+      # Action
       example: 'open: example'
 ```

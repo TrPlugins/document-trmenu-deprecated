@@ -1,26 +1,26 @@
 ---
-description: TrMenu 还支持以配置文件中的节点作为变量获取, 避免重复写同一内容.
+description: TrMenu also supports getting the nodes in the configuration file as variables to avoid writing the same content repeatedly.
 ---
 
-# 节点变量
+# Node variable
 
-## 用法
+## Usage
 ```text
 {node: <key>}
 
 E.g:
 {node: Title}
- -> 获取菜单的 Title
+ -> Get the Title of the menu
  
 {node: Icons.A.display.name}
- -> 获取图标 A 的展示名称
+ -> Get the display name of icon A
  
 {node: Icons.@iconid@.display.name}
- -> 如果该变量存在 B 的任意支持函数变量的区域中, 将获取图标 B 的展示名称
+ -> If the variable exists in any area of B that supports function variables, the display name of icon B will be obtained
 ```
-* **注意**: 获取节点时尽可能注意大小写是否匹配
-* 作为函数变量能够在任意支持变量的区域使用
-* **@iconid@** 为静态变量, 在图标下会被解析为该图标的 id
+* **Note**: When getting the node, pay attention to whether the case matches as much as possible
+* As a function variable, it can be used in any area that supports variables
+* **@iconid@** is a static variable, which will be parsed as the id of the icon under the icon
 
 ## 示例
 ```yaml

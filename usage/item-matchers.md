@@ -1,11 +1,11 @@
-# 物品特征
+# Item Matcher
 
-## 格式 <a id="ge-shi"></a>
+## Format <a id="ge-shi"></a>
 
-* 同一个物品的不同特征匹配，用 , 分开
-* 多个物品特征用 ; 分开
+* Match different features of the same item, use, to separate
+* Use for multiple item features; separate
 
-## 示例 <a id="shi-li"></a>
+## Example <a id="shi-li"></a>
 
 ```text
 material:DIAMOND,amount:64 ; material:EMERALD,amount:32
@@ -13,12 +13,12 @@ material:DIAMOND,amount:64 ; material:EMERALD,amount:32
 
 ## 特征 <a id="te-zheng"></a>
 
-* 材质: Material
-* 损伤值: Data
-* 数量: Amount
-* 名称: Name
-* 描述: Lore
-* 头颅材质: Texture
+* Material: Material
+* Data: Data
+* Amount: Amount
+* Name: Name
+* Lore: Lore
+* Head material: Texture
 * ModelData
 
 [  

@@ -1,45 +1,45 @@
-# 图标变量
+# Icon variable
 ```text
 @iconid@
 ```
 
-# 函数变量
+# Function variable
 
 {% hint style="info" %}
-函数变量内部 `{}` 若需要使用 `}` 右花括号，请转义使用 `\}` 
+Inside the function variable `{}` If you need to use the `}` closing curly brace, please escape it with `\}`
 {% endhint %}
 
-## 菜单参数 函数
+## Menu arguments function
 
 ```text
 {<Index>}
 ```
 
-## Kether 函数
+## Kether Function
 
 ```text
 {ke: <Expression>}
 ```
 
-## JavaScriot 函数
+## JavaScript Function
 
 ```text
 {js: <Expression>}
 ```
 
-## Meta 变量
+## Meta variable
 
 ```text
 {meta: <Key>}
 ```
 
-## Data 变量
+## Data variable
 
 ```text
 {data: <Key>}
 ```
 
-## GlobalData 变量
+## GlobalData variable
 
 ```text
 {gdata: <key>}

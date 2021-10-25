@@ -1,30 +1,30 @@
 ---
-description: TrMenu 的菜单支持将触发命令后缀的参数作为变量使用
+description: TrMenu menu supports the use of arguments with the suffix of the trigger command as a variable
 ---
 
-# 菜单传参
+# Menu Arguments
 
-## 功能启用
+## Function Enable
 
-若不进行任何配置，菜单传参功能默认是**开启**的，
+Without any configuration, the menu arguments transfer function is **enabled** by default.
 
-若遇到命令不兼容情况，可以通过选项关闭
+If you encounter command incompatibility, you can turn it off through options
 
 {% page-ref page="../menu/configuration/option.md" %}
 
-## 传递方式
+## Transfer Method
 
-* 绑定的自定义开启命令传递
-* 插件开启菜单命令传递
-* 调用动作二次修改
+* Binding custom open command transfer
+* Plugin turn on menu command transfer
+* Call action second modification
 
-## 如何使用
+## How To Use
 
-例如玩家当前的参数为 apple, juice, orange，即大小为 3 的一个数组
+For example, the player’s current arguments are apple, juice, orange, which is an array of size 3
 
-在菜单几乎所有地方都可以当作变量使用，{0} 将返回 apple, {1} 返回 juice, 依此类推
+Almost anywhere in the menu can be used as a variable, {0} will return apple, {1} will return juice, and so on
 
-## 注意
+## Note
 
-* 默认情况下，关闭菜单不会删除现有参数
+* By default, closing the menu does not delete existing arguments
 

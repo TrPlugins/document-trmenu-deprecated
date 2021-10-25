@@ -12,7 +12,7 @@ However, its framework is greatly changed, which may cause some features of TrMe
 Therefore, some content needs to be manually migrated to quickly update to TrMenu-pre12.
 
 ## Migration Instructions
-To help you update to the latest version faster, some mandatory and optional (optional) migration options are marked below.
+To help you update to the latest version faster, some mandatory and optional \(optional\) migration options are marked below.
 ### Configuration File
 #### [Optional] settings.yml
 Because TabooLib 6.x updated the feature of automatically detecting the language of the executor, the node `Options.Language` has been removed,
@@ -21,14 +21,14 @@ Just remove the relevant nodes in the configuration file:
 Options:
   Language: en_US
 ```
-#### [Requirement] lang/*.yml (I.e. all language files)
+#### [Requirement] lang/*.yml \(I.e. all language files\)
 Because TabooLib 6.x has updated the function of automatically updating configuration files, in order to better realize automatic updating of configuration files.
 Therefore, the language file is required to be 'flattened' instead of 'multi-level', so the original language file format cannot be read again.
 
 Suggestion: Delete all language files in the `plugins/TrMenu/lang` directory.
 #### [1.8 User] datasource.yml
 Because the 1.8 server-side JDBC driver is too old, it is necessary to make some modifications to the configuration file.
-However, the configuration file did not appear in the previous TrMenu (pre9 and previous) versions, so after completing the migration of the previous two configuration files, you need to start the server first.
+However, the configuration file did not appear in the previous TrMenu \(pre9 and previous\) versions, so after completing the migration of the previous two configuration files, you need to start the server first.
 
 Not surprisingly, you will see the following error message:
 ```
