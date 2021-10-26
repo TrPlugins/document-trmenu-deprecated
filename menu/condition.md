@@ -1,35 +1,35 @@
-# 条件
+# Condition
 
-## 引入
+## Introduce
 
-“条件表达式” 是可用在以下场景中使用的单个字符串
+"Conditional expression" is a single string that can be used in the following scenarios
 
-* 动作参数
-* 反应（动作组）条件
+* Action arguments
+* Reaction \(action group\) conditions
 * 子图标筛选条件
 
-其执行结果应当返回布尔值（Boolean），即 `true` / `false`
+The execution result should return a Boolean value \(Boolean\), namely `true` / `false`
 
-目前，TrMenu 以支持 Kether 和 JavaScript 两种类型的表达式作为条件编译使用
+Currently, TrMenu supports two types of expressions, Kether and JavaScript, as conditional compilation.
 
-其中默认情况下统一调用 Kether \*\(推荐\)
+Among them, Kether is uniformly called by default \*\(recommended\)
 
-## 使用
+## Use
 
-Kether 表达式直接使用，JavaScript 表达式需加以 `js:`  前缀且规范变量处理
+Kether expressions are used directly, JavaScript expressions need to be prefixed with `js:` and standard variable processing
 
-例如创建一个当玩家有 `vip.user` 权限或余额大于等于 `1000` 时才成立的条件
+For example, create a condition that only holds when the player has the permission of `vip.user` or the balance is greater than or equal to `1000`
 
 * Kether: `any [ perm *vip.user money *1000 ]` 
 * JavaSctipt: `js: player.hasPermission("vip.user") || utils.hasMoney(player, 1000.0)` 
 
-两种语法的格式可用通过 `SCRIPT` 章节进一步学习
+The format of the two grammars can be further studied through the chapter `SCRIPT`
 
-## 进阶
+## Advanced
 
 {% page-ref page="../script/kether.md" %}
 
 {% page-ref page="../script/javascript.md" %}
 
-> 深入了解两种语法的结构和在 TrMenu 中的应用场景，制作更强大的菜单
+> In-depth understanding of the structure of the two grammars and application scenarios in TrMenu to make a more powerful menu
 
