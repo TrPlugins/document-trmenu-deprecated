@@ -5,7 +5,6 @@
   * [购买](start/purchase.md)
   * [安装](start/install.md)
   * [配置](start/configurate.md)
-* [迁移](migrate.md)
 
 ## MENU
 
