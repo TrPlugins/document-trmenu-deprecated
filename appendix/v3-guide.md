@@ -97,15 +97,59 @@ source:ORAXEN:itemId
 
 ## 开始
 
-由于 v3.x 与 v2.x 的配置 & 语言结构完全不兼容，菜单部分兼容
+由于 v3.0-pre9(包括 v2.0) 之前的**配置** & **语言**结构不兼容，菜单部分兼容
 
-因此为了更好的完成升级，请先将旧的 TrMenu 文件夹重命名备用，
+因此为了更好地完成升级，请先将旧的 TrMenu 文件夹重命名备用，
 
 然后替换插件后生成新的 TrMenu 文件夹
+
+### 对于 v3.0-pre9 或更早的 v3.0 版本 TrMenu 的相关说明
+> 尽管 TabooLib-pre29 及之后的版本已具备自动迁移, 但仍然建议您根据以下说明进行迁移, 以免发生迁移失败.
+
+在 TabooLib 6.0.0 发布 preview 版后, 已适配 1.17+ 服务端, 并会继续保持未来的新 Minecraft 版本的适配.
+
+但其框架大改, 可能导致 TrMenu 部分特性与 TabooLib 5.x 时期有所不同, 例如 Kether 的一些语法.
+
+建议删除先前的所有语言文件.
+
+若您曾经更改过语言文件, 建议您备份 lang 文件夹, 对照最新的语言文件格式手动进行迁移.
 
 ## 配置
 
 根据本 Wiki 快速了解配置结构 & 根据需要配置
+
+### datasource.yml (对于 1.8 服务端)
+因 1.8 服务端 JDBC 驱动过旧, 因此需要对该配置文件做一些修改.
+但该配置文件并没有出现在先前的 TrMenu(pre9 及更早) 版本中, 因此需要启动一次服务端使其生成.
+
+若无故障, 您会看到以下错误信息:
+```
+[xx:xx:xx] [Server thread/INFO]: [TrMenu] Enabling TrMenu vX.X.X
+[xx:xx:xx] [Server thread/WARN]: SLF4J: No SLF4J providers were found.
+[xx:xx:xx] [Server thread/WARN]: SLF4J: Defaulting to no-operation (NOP) logger implementation
+[xx:xx:xx] [Server thread/WARN]: SLF4J: See http://www.slf4j.org/codes.html#noProviders for further details.
+[xx:xx:xx] [Server thread/ERROR]: Error occurred while enabling TrMenu (Is it up to date?)
+java.lang.AbstractMethodError: org.sqlite.Conn.isValid(I)Z
+	at com.zaxxer.hikari_4_0_3.pool.PoolBase.checkValidationSupport(PoolBase.java:464) ~[?:?]
+	at com.zaxxer.hikari_4_0_3.pool.PoolBase.checkDriverSupport(PoolBase.java:447) ~[?:?]
+	at com.zaxxer.hikari_4_0_3.pool.PoolBase.setupConnection(PoolBase.java:416) ~[?:?]
+	at com.zaxxer.hikari_4_0_3.pool.PoolBase.newConnection(PoolBase.java:369) ~[?:?]
+	at com.zaxxer.hikari_4_0_3.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[?:?]
+	at com.zaxxer.hikari_4_0_3.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[?:?]
+	at com.zaxxer.hikari_4_0_3.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[?:?]
+...
+```
+此时, 配置文件 `plugins/TrMenu/datasource.yml` 将会出现.
+
+找到该配置文件节点 `DefaultSettings.ConnectionTestQuery`, 默认值为 `~`, 只需要将它更改为 `SELECT 1`. 如下:
+```yaml
+  # If your driver supports JDBC4 we strongly recommend not setting this property.
+  # This is for "legacy" drivers that do not support the JDBC4 Connection.isValid() API.
+  # This is the query that will be executed just before a connection is given to you from the pool to validate that the connection to the database is still alive.
+  # Again, try running the pool without this property, HikariCP will log an error if your driver is not JDBC4 compliant to let you know. Default: ~
+  ConnectionTestQuery: SELECT 1
+```
+
 
 ## 菜单
 
@@ -135,9 +179,9 @@ source:ORAXEN:itemId
 
 #### 有必要升级吗
 
-对于正在运行的大型服务器，且菜单量大的，短期内没有必要
-
 新服或菜单需求量少（条件表达式少）的推荐尽快升级
+
+对于正在运行的大型服务器，且或菜单量大的，建议在单独测试各个菜单后考虑升级
 
 旧版本已停止维护和支持，不再处理遗留问题
 

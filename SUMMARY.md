@@ -52,6 +52,7 @@
 * [快捷绑定](usage/shortcuts.md)
 * [命令注册](usage/register-commands.md)
 * [节点变量](usage/node-getter.md)
+* [多彩颜色](usage/colors.md)
 
 ## HOOK
 
