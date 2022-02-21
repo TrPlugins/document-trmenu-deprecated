@@ -63,6 +63,7 @@
 * [API](develop/api/README.md)
   * [Events](develop/api/events.md)
   * [Receptacle](develop/api/receptacle.md)
+  * [Actions](develop/api/actions.md)
 * [Example](develop/example.md)
 
 ## appendix
