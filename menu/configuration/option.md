@@ -20,8 +20,6 @@ Options:
   # 自由槽位
   Free-Slots:
     - '71-73'
-  # 是否使用纯发包菜单
-  Pure-Packet: true
   # 是否隐藏玩家容器
   Hide-Player-Inventory: true
   # 防频繁点击的间隔
