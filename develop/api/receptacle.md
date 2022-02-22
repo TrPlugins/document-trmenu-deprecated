@@ -1,3 +1,6 @@
-# Receptacle
+---
+description: TrMenu 的菜单底层处理
+---
+> 模块名称: receptacle
 
-> 该 API 已移至 TabooLib 6, 因此请以 TabooLib Docs 的 [ReceptacleAPI](https://docs.tabooproject.org/plugin/module/ui-receptacle/index.html) 文档为主.
+# Receptacle
