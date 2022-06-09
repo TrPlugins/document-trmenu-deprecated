@@ -30,5 +30,10 @@
 
 > %trmenu\_js\_&lt;Context&gt;%
 
+{% hint style="danger" %}
+**警告**: 该变量可能会被恶意利用, 请在确保玩家无法主动访问 PlaceholderAPI 变量的情况使用.
+
+若要启用该功能, 请前往 **settings.yml** 将节点 **Options.Placeholders.JavaScript-Parse** 启用
+{% endhint %}
 
 
