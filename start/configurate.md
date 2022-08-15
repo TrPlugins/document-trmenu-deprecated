@@ -92,6 +92,7 @@ Menu:
 
 #
 # 动作相关
+# 开启Kether宽容解析语句后无需添加 * 号
 #
 Action:
   # 捕获器
@@ -100,6 +101,9 @@ Action:
     Cancel-Words:
       - 'cancel|quit|end'
       - 'q'
+  Kether:
+    # 开启Kether语句宽容解析
+    Allow-Tolerance-Parser: true
 
 #
 # 快捷绑定执行的动作
