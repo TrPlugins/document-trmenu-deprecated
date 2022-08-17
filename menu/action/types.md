@@ -304,6 +304,8 @@
 
 #### 配置
 
+{% tabs %}
+{% tab title="聊天框" %}
 ```yaml
 - catcher:
     amount:
@@ -314,6 +316,24 @@
        - 'set-args: {0} {1} {2} `${js: Math.min(Math.max(varInt("{meta:input}"), 1), 64)}`'
        - 'menu: Shop-Handler-Purchase'
 ```
+{% endtab %}
+
+{% tab title="铁砧" %}
+```yaml
+- catcher:
+    amount:
+      type: ANVIL
+      item-left: '{"type":"DIAMOND_SWORD","data":0,"amount":1,"meta":{"Damage":{"type":"INT","data":0}}}'
+      start: 'actionbar: &b&lPlease input a online player'
+      cancel: 'tell: &8Cancelled'
+      end:
+        - condition: 'js: utils.isPlayerOnline(vars("{meta:input}"))'
+          actions: 'tell: &aPlayer {meta:input} is online'
+          deny: 'tell: &cPlayer {meta:input} is offline'
+```
+{% endtab %}
+
+{% endtabs %}
 
 ## 逻辑
 
