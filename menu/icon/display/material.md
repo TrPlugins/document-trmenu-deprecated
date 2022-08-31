@@ -75,7 +75,7 @@ material: 'source:ORAXEN:itemId'
 ### ItemsAdder
 
 ```yaml
-material: 'source:ITEMADDER:itemId'
+material: 'source:ITEMSADDER:itemId'
 material: 'source:IA:anotherItemId'
 ```
 
