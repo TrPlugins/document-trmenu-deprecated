@@ -12,8 +12,8 @@ TrMenu 需要在联网条件下载安装
 
 | 服务端 | 版本 |
 | :--- | :--- |
-| Spigot | 1.8-1.16 |
-| Paper / Tuinity | 1.8-1.16 |
+| Spigot | 1.8-1.19.4 |
+| Paper / Tuinity | 1.8-1.19.4 |
 | CatSever \(Forge\) | √ |
 | Akarin | unknown |
 | Arclight \(Forge\) | √ |
