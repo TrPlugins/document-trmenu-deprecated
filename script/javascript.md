@@ -30,5 +30,7 @@ TrMenu 的 JavaScript 引擎目前提供以下函数
 * 判断有无权限
   * 可直接调用 player 对象的方法，`player.hasPermission("perm")` 
 
+## utils
 
+{% embed url="https://github.com/TrPlugins/TrMenu/blob/stable/v3/plugin/src/main/kotlin/trplugins/menu/module/internal/script/js/Assist.kt" caption="TrMenu/Assist.kt" %}
 
