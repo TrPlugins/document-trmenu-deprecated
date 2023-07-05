@@ -34,6 +34,8 @@ material: '{"type":"DIAMOND_SWORD","data":0,"amount":1,"meta":{"Damage":{"type":
 
 ## 头颅材质
 
+* 已知高版本无法使用头颅材质，可以使用 **转化格式 JSON**
+
 ### 玩家头颅
 
 ```yaml
